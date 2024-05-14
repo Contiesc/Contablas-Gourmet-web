@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,800;1,75..100,800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+//paleta de colores
+$color1: rosybrown;
+$color2: #333;
+$color3: grey;
+$color4: white;
+$color5: rgb(250, 250, 250);
+$color6: #000;
+
+//font
+$font1: "Fira Sans", sans-serif;
+$font2: "open sans", Bold; 
+
+
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.navbar{
+    background-color: $color1;
+}
+.navbar-brand{
+    color: $color2 !important;
+    font-size: 30px;
+    font-weight: 600;
+}
+.nav-link{
+    color: $color4 !important;
+}
+
+.nav-link:hover{
+    background-color: $color3;
+}
+.button:hover{
+    background-color: $color1;
+}
+
+
+.jumbotron{
+    background-image: url(assets/tabla1.png);
+    color: $color5;
+    text-shadow: 0 0 6px $color6;
+    background-size: cover;
+    height: 400px;
+    padding-bottom: 50px;
+    background-position: center;
+}
+
+.Destacados{
+    background-color: rgb(210, 210, 210);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.card{
+    height: 380px;
+    width: 30%;
+    border: 3px solid rgb(228, 171, 180);
+    text-align: center;
+    justify-content: space-between;
+}
+
+.card-img1{
+    height: 200px;
+    background-image: url(assets/IMG_7470.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-img2{
+    height: 200px;
+    background-image: url(assets/IMG_1519.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.card-img3{
+    height: 200px;
+    background-image: url(assets/IMG_3615.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-title{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(228, 171, 180);
+}
+.card-cantidad{
+    font-size: 15px;
+}
+.card-desc{
+    padding: 15px 15px;
+    font-size: 10px;
+}
+
+h2{
+    font-family: $font2;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #b2b2b2;
+    opacity: 0.8;
+    padding: 25px;
+    color: #fff;
+    text-shadow: 0 0 5px $color6;
+}
+.nosotros{
+    padding-inline: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* Quienes Somos start */
+.nosotras{
+    margin-top: 40px;
+
+    padding-left: 50px;
+}
+.nosotras2{
+    padding: 0px;
+}
+.nleft2{
+    background-image: url(assets/quienessomos.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+}
+.container{
+    justify-content: left;
+}
+h3{
+    color: $color6;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.pasos{
+    padding: 40px;
+}
+
+/* Quienes Somos end */
+
+.nleft{
+    background-image: url(assets/IMG_8225\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+.nright{
+    text-align: left;
+    color: grey;
+}
+h3{
+    color: #333;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.feature{
+    height: auto;
+}
+.btn{
+    color: rgb(228, 171, 180);
+    justify-content: end;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+article{
+    border: 3px solid rgb(228, 171, 180);
+    text-align: center;
+    font-size: small;
+}
+article i{
+    font-size: 30px;
+    color: rgb(228, 171, 180);
+    padding: 15px;
+}
+.row1{
+    padding-top: 30px;
+    padding-inline: 40px;
+    display: flex;
+}
+h4{
+    padding-top: 20px;
+    color: rosybrown;
+}
+.valores{
+    margin-inline: 25px;
+}
+/* Contacto */
+form{
+    padding-inline: 30px;
+}
+.input-group{
+    margin-top: 30px;
+}
+label{
+    margin-top: 10px;
+}
+.contacto{
+    margin-top: 50px;
+    padding-left: 30px;
+    text-align: center;
+}
+.img{
+    height: 200px;
+    justify-items: center;
+    margin: 20px;
+}
+/* Galeria */
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 180px);
+    padding-inline: 20px;
+    padding-bottom: 20px;
+    grid-gap: 10px;
+}
+.fotos{ 
+    text-align:initial;
+    margin-left: 15px;
+    color: grey;
+    height: 80px;
+    font-size: 35px;
+    text-decoration: underline;
+}
+.item{
+    border: 3px solid rosybrown;
+    background-position: center;
+    background-size: cover;
+}
+.item1{
+    background-image: url(assets/IMG_6107.jpeg);
+}
+.item2{
+    background-image: url(assets/IMG_1519.jpeg);
+}
+.item3{
+    background-image: url(assets/IMG_1761.jpeg);
+}
+.item4{
+    background-image: url(assets/IMG_8428.jpeg);
+}
+.item5{
+    background-image: url(assets/IMG_7470.jpg);
+}
+.item6{
+    background-image: url(assets/IMG_3615.jpeg);
+}
+.item7{
+    background-image: url(assets/IMG_8231.jpg);
+}
+.item8{
+    background-image: url(assets/IMG_6107.jpeg);
+}
+
+@media only screen and (min-width:480px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 180px);
+    }
+}
+
+@media only screen and (min-width:768px)and (max-width:1024px){
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .item1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        }
+        
+        .item2{
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+        .item3{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .item4{
+            grid-column: 2/4;
+            grid-row: 2/3;
+        }
+        .item5{
+            grid-column: 1/3;
+            grid-row: 3/4;
+        }
+        .item6{
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+        .item7{
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+        .item8{
+            grid-column: 2/4;
+            grid-row: 4/5;
+        }
+}
+@media only screen and (min-width:1024px){
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 200px);
+    }
+}
+
+/* Productos */
+.row{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-inline: 40px;
+    display: flex;
+}
+.col{
+    align-items: center;
+}
+.card{
+    display: flex;
+    height: fit-content;
+    width: 300px;
+    padding: 10px;
+    grid-template-columns: repeat(2)
+}
+.card-img-top{
+    align-content: center;
+    height: 220px;
+}
+.Agregar{
+    color: white !important;
+}
+
+
+/* footer */
+footer{
+    background-color: rosybrown;
+    padding: 20px;
+    margin-top: auto;
+    text-align: right;
+    color: #fff;
+    font-size: 15px;
+}
+footer a{
+    color: white;
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-decoration: none;
+}
+.what{
+    height: 40px;
+    width: 40px;
+    background-color: springgreen;
+    color: #fff;
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
+}

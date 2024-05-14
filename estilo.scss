@@ -3,6 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,800;1,75..100,800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
     margin: 0;
@@ -18,10 +19,13 @@ $color3: grey;
 $color4: white;
 $color5: rgb(250, 250, 250);
 $color6: #000;
+$color7: rgb(228, 171, 180);
+
 
 //font
 $font1: "Fira Sans", sans-serif;
 $font2: "open sans", Bold; 
+$font3: "Roboto";
 
 
 html{
@@ -34,19 +38,23 @@ body{
 }
 .navbar{
     background-color: $color1;
-}
-.navbar-brand{
-    color: $color2 !important;
-    font-size: 30px;
-    font-weight: 600;
-}
-.nav-link{
-    color: $color4 !important;
+
+    .navbar-brand{
+        color: $color2 !important;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .nav-link{
+        color: $color4 !important;
+    }
+
+    .nav-link:hover{
+        background-color: $color3;
+    }
 }
 
-.nav-link:hover{
-    background-color: $color3;
-}
+
 .button:hover{
     background-color: $color1;
 }
@@ -63,7 +71,7 @@ body{
 }
 
 .Destacados{
-    background-color: rgb(210, 210, 210);
+    background-color: $color5;
     display: flex;
     justify-content: space-evenly;
     padding: 15px;
@@ -72,7 +80,7 @@ body{
 .card{
     height: 380px;
     width: 30%;
-    border: 3px solid rgb(228, 171, 180);
+    border: 3px solid $color7;
     text-align: center;
     justify-content: space-between;
 }
@@ -99,7 +107,7 @@ body{
 .card-title{
     font-size: 20px;
     text-align: center;
-    color: rgb(228, 171, 180);
+    color: $color7;
 }
 .card-cantidad{
     font-size: 15px;
@@ -113,10 +121,10 @@ h2{
     font-family: $font2;
     text-align: center;
     margin-top: 40px;
-    background-color: #b2b2b2;
+    background-color: $color3;
     opacity: 0.8;
     padding: 25px;
-    color: #fff;
+    color: $color4;
     text-shadow: 0 0 5px $color6;
 }
 .nosotros{
@@ -127,7 +135,6 @@ h2{
 /* Quienes Somos start */
 .nosotras{
     margin-top: 40px;
-
     padding-left: 50px;
 }
 .nosotras2{
@@ -137,13 +144,15 @@ h2{
     background-image: url(assets/quienessomos.jpeg);
     background-size: cover;
     background-position: center;
-    height: 380px;
+    height: 450px;
 }
 .container{
     justify-content: left;
 }
+
 h3{
     color: $color6;
+    font-family: $font3;
     text-align: left;
     text-transform: uppercase;
     padding-top: 30px;
@@ -153,7 +162,6 @@ h3{
 }
 
 /* Quienes Somos end */
-
 .nleft{
     background-image: url(assets/IMG_8225\ 2.jpg);
     background-size: cover;
@@ -162,10 +170,12 @@ h3{
 }
 .nright{
     text-align: left;
-    color: grey;
+    color: $color3;
 }
-h3{
-    color: #333;
+
+h4{
+    color: $color2;
+    font-family: $font3;
     text-align: left;
     text-transform: uppercase;
     padding-top: 30px;
@@ -173,21 +183,22 @@ h3{
 .feature{
     height: auto;
 }
+
 .btn{
-    color: rgb(228, 171, 180);
+    color: $color7;
     justify-content: end;
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
 article{
-    border: 3px solid rgb(228, 171, 180);
+    border: 3px solid $color7;
     text-align: center;
     font-size: small;
 }
 article i{
     font-size: 30px;
-    color: rgb(228, 171, 180);
+    color: $color7;
     padding: 15px;
 }
 .row1{
@@ -195,9 +206,10 @@ article i{
     padding-inline: 40px;
     display: flex;
 }
-h4{
+
+h5{
     padding-top: 20px;
-    color: rosybrown;
+    color: $color1;
 }
 .valores{
     margin-inline: 25px;
@@ -234,13 +246,13 @@ label{
 .fotos{ 
     text-align:initial;
     margin-left: 15px;
-    color: grey;
+    color: $color3;
     height: 80px;
     font-size: 35px;
     text-decoration: underline;
 }
 .item{
-    border: 3px solid rosybrown;
+    border: 3px solid $color1;
     background-position: center;
     background-size: cover;
 }
@@ -343,21 +355,21 @@ label{
     height: 220px;
 }
 .Agregar{
-    color: white !important;
+    color: $color4 !important;
 }
 
 
 /* footer */
 footer{
-    background-color: rosybrown;
+    background-color: $color1;
     padding: 20px;
     margin-top: auto;
     text-align: right;
-    color: #fff;
+    color: $color4;
     font-size: 15px;
 }
 footer a{
-    color: white;
+    color: $color4;
     font-size: 30px;
     letter-spacing: 10px;
     text-decoration: none;
@@ -366,7 +378,7 @@ footer a{
     height: 40px;
     width: 40px;
     background-color: springgreen;
-    color: #fff;
+    color: $color4;
     position: fixed;
     left: 30px;
     bottom: 30px;
@@ -374,6 +386,6 @@ footer a{
     font-size: 25px;
     line-height: 40px;
     border-radius: 50%;
-    text-shadow: 0 0 5px #000;
-    box-shadow: 0 0 5px #000;
+    text-shadow: 0 0 5px $color6;
+    box-shadow: 0 0 5px $color6;
 }

@@ -26,10 +26,12 @@ body {
   font-size: 30px;
   font-weight: 600;
 }
-.navbar .nav-link {
+.navbar .navbar-brand .nav-link {
   color: white !important;
+  font-family: "Roboto", bold;
 }
-.navbar .nav-link:hover {
+
+.nav-link:hover {
   background-color: grey;
 }
 
@@ -38,7 +40,7 @@ body {
 }
 
 .jumbotron {
-  background-image: url(assets/tabla1.png);
+  background-image: url(../assets/tabla1.png);
   color: rgb(250, 250, 250);
   text-shadow: 0 0 6px #000;
   background-size: cover;
@@ -64,23 +66,26 @@ body {
 
 .card-img1 {
   height: 200px;
-  background-image: url(assets/IMG_7470.jpg);
+  background-image: url(../assets/IMG_7470.jpg);
   background-size: cover;
   background-position: center;
+  margin-bottom: 20px;
 }
 
 .card-img2 {
   height: 200px;
-  background-image: url(assets/IMG_1519.jpeg);
+  background-image: url(../assets/IMG_1519.jpeg);
   background-size: cover;
   background-position: center;
+  margin-bottom: 20px;
 }
 
 .card-img3 {
   height: 200px;
-  background-image: url(assets/IMG_3615.jpeg);
+  background-image: url(../assets/IMG_3615.jpeg);
   background-size: cover;
   background-position: center;
+  margin-bottom: 20px;
 }
 
 .card-title {
@@ -98,8 +103,12 @@ body {
   font-size: 10px;
 }
 
+h1 {
+  margin-left: 20px;
+}
+
 h2 {
-  font-family: "open sans", Bold;
+  font-family: "Roboto", bold;
   text-align: center;
   margin-top: 40px;
   background-color: grey;
@@ -115,56 +124,17 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Quienes Somos start */
-.nosotras {
-  margin-top: 40px;
-  padding-left: 50px;
-}
-
-.nosotras2 {
-  padding: 0px;
-}
-
-.nleft2 {
-  background-image: url(assets/quienessomos.jpeg);
-  background-size: cover;
-  background-position: center;
-  height: 450px;
-}
-
-.container {
-  justify-content: left;
-}
-
 h3 {
-  color: #000;
-  font-family: "Roboto";
+  color: rosybrown;
+  font-family: "Fira Sans", sans-serif;
   text-align: left;
   text-transform: uppercase;
-  padding-top: 30px;
-}
-
-.pasos {
-  padding: 40px;
-}
-
-/* Quienes Somos end */
-.nleft {
-  background-image: url(assets/IMG_8225\ 2.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 350px;
-}
-
-.nright {
-  text-align: left;
-  color: grey;
 }
 
 h4 {
   color: #333;
-  font-family: "Roboto";
-  text-align: left;
+  font-family: "Roboto", bold;
+  text-align: center;
   text-transform: uppercase;
   padding-top: 30px;
 }
@@ -173,11 +143,10 @@ h4 {
   height: auto;
 }
 
-.btn {
-  color: rgb(228, 171, 180);
-  justify-content: end;
-  margin-top: 10px;
-  margin-bottom: 15px;
+.texto1 {
+  margin-left: 20px;
+  width: 70%;
+  font-size: 15px;
 }
 
 article {
@@ -207,7 +176,70 @@ h5 {
   margin-inline: 25px;
 }
 
-/* Contacto */
+.nleft {
+  background-image: url(../assets/IMG_8218\ 2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
+.nright {
+  text-align: left;
+  color: grey;
+}
+
+.quien {
+  color: #333;
+  font-family: "open sans", Bold;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.quien2 {
+  margin-left: 20px;
+}
+
+.btn {
+  color: rgb(228, 171, 180);
+  justify-content: end;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+/* footer */
+footer {
+  background-color: rosybrown;
+  padding: 20px;
+  margin-top: auto;
+  text-align: right;
+  color: white;
+  font-size: 15px;
+}
+
+footer a {
+  color: white;
+  font-size: 30px;
+  letter-spacing: 10px;
+  text-decoration: none;
+}
+
+.what {
+  height: 40px;
+  width: 40px;
+  background-color: springgreen;
+  color: white;
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+
 form {
   padding-inline: 30px;
 }
@@ -232,7 +264,6 @@ label {
   margin: 20px;
 }
 
-/* Galeria */
 .galeria {
   display: grid;
   grid-template-columns: 1fr;
@@ -258,35 +289,35 @@ label {
 }
 
 .item1 {
-  background-image: url(assets/IMG_6107.jpeg);
+  background-image: url(../assets/IMG_6107.jpeg);
 }
 
 .item2 {
-  background-image: url(assets/IMG_1519.jpeg);
+  background-image: url(../assets/IMG_1519.jpeg);
 }
 
 .item3 {
-  background-image: url(assets/IMG_1761.jpeg);
+  background-image: url(../assets/IMG_1761.jpeg);
 }
 
 .item4 {
-  background-image: url(assets/IMG_8428.jpeg);
+  background-image: url(../assets/IMG_8428.jpeg);
 }
 
 .item5 {
-  background-image: url(assets/IMG_7470.jpg);
+  background-image: url(../assets/IMG_7470.jpg);
 }
 
 .item6 {
-  background-image: url(assets/IMG_3615.jpeg);
+  background-image: url(../assets/IMG_3615.jpeg);
 }
 
 .item7 {
-  background-image: url(assets/IMG_8231.jpg);
+  background-image: url(../assets/IMG_8231.jpg);
 }
 
 .item8 {
-  background-image: url(assets/IMG_6107.jpeg);
+  background-image: url(../assets/IMG_6107.jpeg);
 }
 
 @media only screen and (min-width: 480px) {
@@ -338,7 +369,35 @@ label {
     grid-template-rows: repeat(2, 200px);
   }
 }
-/* Productos */
+h3 {
+  text-align: left;
+}
+
+.nosotras {
+  padding: 20px;
+}
+
+.nosotras2 {
+  padding-left: 10px;
+  font-family: "Fira Sans", sans-serif;
+  text-align: left;
+  color: rosybrown;
+}
+
+.nleft2 {
+  background-image: url(../assets/quienessomos.jpeg);
+  background-size: cover;
+  height: 450px;
+}
+
+.container {
+  text-align: left;
+}
+
+.pasos {
+  padding: 40px;
+}
+
 .row {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -366,37 +425,4 @@ label {
 
 .Agregar {
   color: white !important;
-}
-
-/* footer */
-footer {
-  background-color: rosybrown;
-  padding: 20px;
-  margin-top: auto;
-  text-align: right;
-  color: white;
-  font-size: 15px;
-}
-
-footer a {
-  color: white;
-  font-size: 30px;
-  letter-spacing: 10px;
-  text-decoration: none;
-}
-
-.what {
-  height: 40px;
-  width: 40px;
-  background-color: springgreen;
-  color: white;
-  position: fixed;
-  left: 30px;
-  bottom: 30px;
-  text-align: center;
-  font-size: 25px;
-  line-height: 40px;
-  border-radius: 50%;
-  text-shadow: 0 0 5px #000;
-  box-shadow: 0 0 5px #000;
 }/*# sourceMappingURL=estilo.css.map */

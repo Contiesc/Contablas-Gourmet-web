@@ -33,43 +33,14 @@
 $micolor8: rgb(59, 59, 59);
 $micolor9: rgb(118, 77, 77);
 
-@for $i from 1 through 4 {
+@for $i from 1 through 8 {
     .item#{$i} {
-        background-color: lighten($micolor8, $i * 10%);
-        background-image: url(asset/img1#{$i}.jpeg);
-    }
-}
-@for $i from 5 through 8 {
-    .item#{$i} {
-        background-color: lighten($micolor9, $i * 10%);
-        background-image: url(img1#{$i}.jpeg);
+        background-color: lighten($micolor8, $i * 8%);
+        background-image: url(../assets/img#{$i}.jpeg);
     }
 }
 
-.item1{
-    background-image: url(../assets/IMG_6107.jpeg);
-}
-.item2{
-    background-image: url(../assets/IMG_1519.jpeg);
-}
-.item3{
-    background-image: url(../assets/IMG_1761.jpeg);
-}
-.item4{
-    background-image: url(../assets/IMG_8428.jpeg);
-}
-.item5{
-    background-image: url(../assets/IMG_7470.jpg);
-}
-.item6{
-    background-image: url(../assets/IMG_3615.jpeg);
-}
-.item7{
-    background-image: url(../assets/IMG_8231.jpg);
-}
-.item8{
-    background-image: url(../assets/IMG_6107.jpeg);
-}
+
 
 @media only screen and (min-width:480px){
     .galeria{

@@ -1,24 +1,51 @@
+.fotos{ 
+    text-align:initial;
+    margin-left: $margin1;
+    color: $color3;
+    height: 80px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
 .galeria{
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 180px);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
     padding-inline: 20px;
     padding-bottom: 20px;
     grid-gap: 10px;
 }
-.fotos{ 
-    text-align:initial;
-    margin-left: 15px;
-    color: $color3;
-    height: 80px;
-    font-size: 35px;
-    text-decoration: underline;
-}
+
 .item{
     border: 3px solid $color1;
     background-position: center;
-    background-size: cover;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    transition: all 0.9s;
 }
+
+.item:hover{
+    transition: all 0.9s;
+    background-size: 125%;
+}
+
+$micolor8: rgb(59, 59, 59);
+$micolor9: rgb(118, 77, 77);
+
+@for $i from 1 through 4 {
+    .item#{$i} {
+        background-color: lighten($micolor8, $i * 10%);
+        background-image: url(asset/img1#{$i}.jpeg);
+    }
+}
+@for $i from 5 through 8 {
+    .item#{$i} {
+        background-color: lighten($micolor9, $i * 10%);
+        background-image: url(img1#{$i}.jpeg);
+    }
+}
+
 .item1{
     background-image: url(../assets/IMG_6107.jpeg);
 }

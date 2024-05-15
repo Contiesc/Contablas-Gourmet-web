@@ -264,28 +264,76 @@ label {
   margin: 20px;
 }
 
+.fotos {
+  text-align: initial;
+  margin-left: 20px;
+  color: grey;
+  height: 80px;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
 .galeria {
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 180px);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 200px);
   padding-inline: 20px;
   padding-bottom: 20px;
   grid-gap: 10px;
 }
 
-.fotos {
-  text-align: initial;
-  margin-left: 15px;
-  color: grey;
-  height: 80px;
-  font-size: 35px;
-  text-decoration: underline;
-}
-
 .item {
   border: 3px solid rosybrown;
   background-position: center;
-  background-size: cover;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  transition: all 0.9s;
+}
+
+.item:hover {
+  transition: all 0.9s;
+  background-size: 125%;
+}
+
+.item1 {
+  background-color: #555555;
+  background-image: url(asset/img11.jpeg);
+}
+
+.item2 {
+  background-color: #6e6e6e;
+  background-image: url(asset/img12.jpeg);
+}
+
+.item3 {
+  background-color: #888888;
+  background-image: url(asset/img13.jpeg);
+}
+
+.item4 {
+  background-color: #a1a1a1;
+  background-image: url(asset/img14.jpeg);
+}
+
+.item5 {
+  background-color: #e7dbdb;
+  background-image: url(img15.jpeg);
+}
+
+.item6 {
+  background-color: #fbfafa;
+  background-image: url(img16.jpeg);
+}
+
+.item7 {
+  background-color: white;
+  background-image: url(img17.jpeg);
+}
+
+.item8 {
+  background-color: white;
+  background-image: url(img18.jpeg);
 }
 
 .item1 {

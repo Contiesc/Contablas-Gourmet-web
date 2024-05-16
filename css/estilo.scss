@@ -23,15 +23,18 @@ $color7: rgb(228, 171, 180);
 
 $margin1: 20px;
 
+$size1: 20px;
+
 //font
 $font1: "Fira Sans", sans-serif;
-$font2: "open sans", Bold; 
+$font2: "open sans", "extra-bold"; 
 $font3: "Roboto", bold;
 
 
 html{
     height: 100%;
 }
+
 body{
     display: flex;
     flex-direction: column;
@@ -61,19 +64,17 @@ body{
     background-color: $color1;
 }
 
-
 .jumbotron{
-    background-image: url(../assets/tabla1.png);
+    background-image: linear-gradient(to right, rgb(200, 200, 200, 0.5), rgba(255,255,255,0)), url(../assets/tabla1.png);
     color: $color5;
-    text-shadow: 0 0 6px $color6;
+    text-shadow: 0 0 10px $color6;
     background-size: cover;
-    height: 400px;
+    height: 600px;
     padding-bottom: 50px;
     background-position: center;
 }
 
 .Destacados{
-    background-color: $color5;
     display: flex;
     justify-content: space-evenly;
     padding: 15px;
@@ -87,59 +88,77 @@ body{
     justify-content: space-between;
 }
 
-.card-img1{
-    height: 200px;
-    background-image: url(../assets/IMG_7470.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-bottom: $margin1;
+@mixin sizes ($height, $color, $width) {
+    height: $height;
+    color: $color;
+    width: $width;
 }
-.card-img2{
-    height: 200px;
-    background-image: url(../assets/IMG_1519.jpeg);
-    background-size: cover;
-    background-position: center;
-    margin-bottom: $margin1;
-}
-.card-img3{
-    height: 200px;
-    background-image: url(../assets/IMG_3615.jpeg);
-    background-size: cover;
-    background-position: center;
-    margin-bottom: $margin1;
+
+@for $i from 1 through 3 {
+    .card-img#{$i} {
+        background-image: url(../assets/img#{$i}.jpeg);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: $margin1;
+        @include sizes (200px, rosybrown, auto)
+    }
 }
 
 .card-title{
-    font-size: 20px;
+    font-size: $size1;
     text-align: center;
     color: $color7;
+    margin-bottom: 0;
 }
 .card-cantidad{
-    font-size: 15px;
+    font-size: $size1 - 5;
 }
 .card-desc{
     padding: 15px 15px;
-    font-size: 10px;
+    font-size: $size1/2;
 }
 
 h1{
+    margin-top: $margin1*2;
     margin-left: $margin1;
+    font-size: $size1 + 15;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px $color6;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-direction: alternate;
 }
 
+
 h2{
-    font-family: $font3;
-    text-align: center;
-    margin-top: 40px;
-    background-color: $color3;
-    opacity: 0.8;
-    padding: 25px;
     color: $color4;
     text-shadow: 0 0 5px $color6;
+    text-transform: uppercase;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-direction: alternate;
+    font-family: $font3;
+    text-align: center;
+    margin-top: $margin1;
+    background-color: $color3;
+    background-image: linear-gradient(to bottom, grey, white);
+    opacity: 0.8;
+    padding: 25px;
+
 }
+
+@keyframes aparecer {
+    0%{
+        opacity: 0; }
+
+    100%{
+        opacity: 1;}
+}
+
 .nosotros{
     padding-inline: 20px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: $margin1/2;
 }
 
 h3{
@@ -159,24 +178,26 @@ h4{
 
 .feature{
     height: auto;
+    margin-bottom: $margin1 + 5;
 }
 
 .texto1{
     margin-left: $margin1;
-    width: 70%;
-    font-size: 15px;
+    width: 60%;
+    font-size: $size1 - 5;
+    text-shadow: 5px 5 px 5 px $color6;
 }
 
 
 article{
     border: 3px solid $color7;
     text-align: center;
-    font-size: small;
+    font-size: $size1 - 7;
 }
 article i{
-    font-size: 30px;
+    font-size: $size1 + 10;
     color: $color7;
-    padding: 15px;
+    padding: 20px;
 }
 .row1{
     padding-top: 30px;
@@ -189,7 +210,7 @@ h5{
     color: $color1;
 }
 .valores{
-    margin-inline: 25px;
+    margin-inline: $margin1 + 5;
 }
 
 .nleft{
@@ -215,8 +236,8 @@ h5{
 .btn{
     color: $color7;
     justify-content: end;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: $margin1/2;
+    margin-bottom: $margin1 - 5;
     margin-left: $margin1;
 }
 
@@ -228,11 +249,11 @@ footer{
     margin-top: auto;
     text-align: right;
     color: $color4;
-    font-size: 15px;
+    font-size: $size1 - 5;
 }
 footer a{
     color: $color4;
-    font-size: 30px;
+    font-size: $size1 + 10;
     letter-spacing: 10px;
     text-decoration: none;
 }
@@ -245,7 +266,7 @@ footer a{
     left: 30px;
     bottom: 30px;
     text-align: center;
-    font-size: 25px;
+    font-size: $margin1 + 5;
     line-height: 40px;
     border-radius: 50%;
     text-shadow: 0 0 5px $color6;

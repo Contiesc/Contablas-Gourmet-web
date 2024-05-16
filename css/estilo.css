@@ -40,17 +40,16 @@ body {
 }
 
 .jumbotron {
-  background-image: url(../assets/tabla1.png);
+  background-image: linear-gradient(to right, rgba(200, 200, 200, 0.5), rgba(255, 255, 255, 0)), url(../assets/tabla1.png);
   color: rgb(250, 250, 250);
-  text-shadow: 0 0 6px #000;
+  text-shadow: 0 0 10px #000;
   background-size: cover;
-  height: 400px;
+  height: 600px;
   padding-bottom: 50px;
   background-position: center;
 }
 
-.Destacados {
-  background-color: rgb(250, 250, 250);
+.Destacados, .row {
   display: flex;
   justify-content: space-evenly;
   padding: 15px;
@@ -65,33 +64,40 @@ body {
 }
 
 .card-img1 {
-  height: 200px;
-  background-image: url(../assets/IMG_7470.jpg);
+  background-image: url(../assets/img1.jpeg);
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
+  height: 200px;
+  color: rosybrown;
+  width: auto;
 }
 
 .card-img2 {
-  height: 200px;
-  background-image: url(../assets/IMG_1519.jpeg);
+  background-image: url(../assets/img2.jpeg);
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
+  height: 200px;
+  color: rosybrown;
+  width: auto;
 }
 
 .card-img3 {
-  height: 200px;
-  background-image: url(../assets/IMG_3615.jpeg);
+  background-image: url(../assets/img3.jpeg);
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
+  height: 200px;
+  color: rosybrown;
+  width: auto;
 }
 
 .card-title {
   font-size: 20px;
   text-align: center;
   color: rgb(228, 171, 180);
+  margin-bottom: 0;
 }
 
 .card-cantidad {
@@ -104,20 +110,40 @@ body {
 }
 
 h1 {
+  margin-top: 40px;
   margin-left: 20px;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 3px #000;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-direction: alternate;
 }
 
 h2 {
-  font-family: "Roboto", bold;
-  text-align: center;
-  margin-top: 40px;
-  background-color: grey;
-  opacity: 0.8;
-  padding: 25px;
   color: white;
   text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  animation-duration: 5s;
+  animation-name: aparecer;
+  animation-direction: alternate;
+  font-family: "Roboto", bold;
+  text-align: center;
+  margin-top: 20px;
+  background-color: grey;
+  background-image: linear-gradient(to bottom, grey, white);
+  opacity: 0.8;
+  padding: 25px;
 }
 
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .nosotros {
   padding-inline: 20px;
   text-align: center;
@@ -141,24 +167,26 @@ h4 {
 
 .feature {
   height: auto;
+  margin-bottom: 25px;
 }
 
 .texto1 {
   margin-left: 20px;
-  width: 70%;
+  width: 60%;
   font-size: 15px;
+  text-shadow: 5px 5 px 5 px #000;
 }
 
 article {
   border: 3px solid rgb(228, 171, 180);
   text-align: center;
-  font-size: small;
+  font-size: 13px;
 }
 
 article i {
   font-size: 30px;
   color: rgb(228, 171, 180);
-  padding: 15px;
+  padding: 20px;
 }
 
 .row1 {
@@ -190,7 +218,7 @@ h5 {
 
 .quien {
   color: #333;
-  font-family: "open sans", Bold;
+  font-family: "open sans", "extra-bold";
   text-align: left;
   margin-left: 20px;
 }
@@ -267,10 +295,9 @@ label {
 .fotos {
   text-align: initial;
   margin-left: 20px;
-  color: grey;
+  color: white;
   height: 80px;
   font-size: 25px;
-  text-decoration: underline;
 }
 
 .galeria {
@@ -286,7 +313,7 @@ label {
 .item {
   border: 3px solid rosybrown;
   background-position: center;
-  background-size: 75%;
+  background-size: 100%;
   background-repeat: no-repeat;
   transition: all 0.9s;
 }
@@ -415,10 +442,8 @@ h3 {
 }
 
 .row {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-inline: 40px;
-  display: flex;
+  margin-top: 20px;
+  background-color: none;
 }
 
 .col {

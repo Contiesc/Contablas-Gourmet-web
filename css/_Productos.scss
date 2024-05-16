@@ -1,9 +1,8 @@
 
 .row{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-inline: 40px;
-    display: flex;
+    @extend .Destacados;
+    margin-top: $margin1;
+    background-color: none;
 }
 .col{
     align-items: center;

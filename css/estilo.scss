@@ -64,7 +64,7 @@ body{
 }
 
 .jumbotron{
-    background-image: linear-gradient(to right, rgb(200, 200, 200, 0.5), rgba(255,255,255,0)), url(../assets/tabla1.png);
+    background-image: linear-gradient(to right, rgb(200, 200, 200, 0.5), rgba(255,255,255,0)), url(../assets/tabla4.png);
     color: $color5;
     text-shadow: 0 0 10px $color6;
     background-size: cover;
@@ -73,8 +73,13 @@ body{
     background-position: center;
 }
 
+
+.button:hover{
+    background-color: $color1;
+}
+
 .destacados{
-    display: flex;
+    display: inline-block;
     justify-content: space-evenly;
     padding: 15px;
 }

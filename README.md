@@ -14,8 +14,5 @@ Illustrator, Photoshop, InDesign, Autocad, Figma, HTML, CSS.
   ![Figma](https://img.shields.io/badge/-Figma-333333?style=flat&logo=figma)
 
 ### Contact Me
-<a href="https://www.linkedin.com/in/constanza-escudero"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Conti%20Vera-blue?style=flat-square&logo=linkedin"></a>
+<a href="https://www.linkedin.com/in/constanza-escudero"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Constanza%20Escudero-blue?style=flat-square&logo=linkedin"></a>
 <a href="conti.escudero@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Gmail-Conti.escudero@gmail.com-blue?style=flat-square&logo=gmail"></a>  
-
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=mauro069&label=Profile%20views&color=0e75b6&style=flat" alt="mauro069" /> </p>

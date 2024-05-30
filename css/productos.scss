@@ -1,8 +1,4 @@
-.row {
-    @extend .Destacados;
-    margin-top: $margin1;
-    background-color: none;
-}
+
 
 .col {
     align-items: center;
@@ -21,12 +17,5 @@
     height: 220px;
 }
 
-.Agregar {
-    color: $color4 !important;
-}
 
-.productos {
-    color: $color2;
-    margin-top: 10px;
 
-}

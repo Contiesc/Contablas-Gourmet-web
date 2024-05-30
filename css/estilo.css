@@ -289,7 +289,6 @@ label {
 }
 
 .contacto {
-  color: rosybrown;
   margin-top: 50px;
   padding-left: 30px;
   text-align: center;
@@ -299,14 +298,6 @@ label {
   height: 200px;
   justify-items: center;
   margin: 20px;
-}
-
-.fotos {
-  text-align: initial;
-  margin-left: 20px;
-  color: white;
-  height: 80px;
-  font-size: 25px;
 }
 
 .galeria {
@@ -440,7 +431,7 @@ h3 {
   font-family: "Fira Sans", sans-serif;
   text-align: left;
   color: rosybrown;
-  text-shadow: 1px 1px 1px grey;
+  text-shadow: 2px 2px 2px grey;
 }
 
 .nleft2 {
@@ -482,9 +473,4 @@ h3 {
 
 .Agregar {
   color: white !important;
-}
-
-.productos {
-  color: #333;
-  margin-top: 10px;
 }/*# sourceMappingURL=estilo.css.map */

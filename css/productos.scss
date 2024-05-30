@@ -1,25 +1,32 @@
-.productos{
-    color: $color2; 
-}
-.row{
+.row {
     @extend .Destacados;
     margin-top: $margin1;
     background-color: none;
 }
-.col{
+
+.col {
     align-items: center;
 }
-.card{
+
+.card {
     display: flex;
     height: fit-content;
     width: 300px;
     padding: 10px;
     grid-template-columns: repeat(2)
 }
-.card-img-top{
+
+.card-img-top {
     align-content: center;
     height: 220px;
 }
-.Agregar{
+
+.Agregar {
     color: $color4 !important;
+}
+
+.productos {
+    color: $color2;
+    margin-top: 10px;
+
 }

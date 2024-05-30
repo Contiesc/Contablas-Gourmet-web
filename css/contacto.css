@@ -20,4 +20,9 @@ label {
   height: 200px;
   justify-items: center;
   margin: 20px;
+}
+
+.contactar {
+  color: rosybrown;
+  text-shadow: 2px 2px 2px color(grey);
 }/*# sourceMappingURL=contacto.css.map */

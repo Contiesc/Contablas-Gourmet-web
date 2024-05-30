@@ -6,6 +6,14 @@ h3 {
   padding: 20px;
 }
 
+.nosotras2 {
+  color: rosybrown;
+}
+
+.nright2 {
+  padding: 10px;
+}
+
 .nleft2 {
   background-image: url(../assets/quienessomos.jpeg);
   background-size: cover;

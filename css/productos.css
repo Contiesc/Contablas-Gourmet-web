@@ -1,3 +1,9 @@
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
 .col {
   align-items: center;
 }
@@ -14,4 +20,12 @@
 .card-img-top {
   align-content: center;
   height: 220px;
+}
+
+.productos {
+  color: grey;
+  padding: 15px;
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
 }/*# sourceMappingURL=productos.css.map */

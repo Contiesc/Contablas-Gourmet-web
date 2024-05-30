@@ -10,7 +10,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(8, 200px);
     padding-inline: 20px;
     padding-bottom: 20px;
     grid-gap: 10px;
@@ -90,9 +90,17 @@ $micolor8: rgb(59, 59, 59);
             grid-row: 4/5;
         }
 }
+
 @media only screen and (min-width:1024px){
     .galeria{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 200px);
+    }
+}
+@media screen and (min-width: 401px) {
+    .columnas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
     }
 }

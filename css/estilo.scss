@@ -5,7 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -26,45 +26,47 @@ $size1: 20px;
 
 //font
 $font1: "Fira Sans", sans-serif;
-$font2: "open sans", "extra-bold"; 
+$font2: "open sans", "extra-bold";
 $font3: "Roboto", bold;
 
 
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.navbar{
+.navbar {
     background-color: $color1;
 
-    & .navbar-brand{
+    & .navbar-brand {
+
         color: $color2 !important;
         font-size: 30px;
         font-weight: 600;
 
-        & .nav-link{
+        & .nav-link {
             color: $color4 !important;
             font-family: $font3;
         }
     }
 }
 
-.nav-link:hover{
+
+.nav-link:hover {
     background-color: $color3;
 }
 
-.button:hover{
+.button:hover {
     background-color: $color1;
 }
 
-.jumbotron{
-    background-image: linear-gradient(to right, rgb(200, 200, 200, 0.5), rgba(255,255,255,0)), url(../assets/tabla4.png);
+.jumbotron {
+    background-image: linear-gradient(to right, rgb(200, 200, 200, 0.5), rgba(255, 255, 255, 0)), url(../assets/tabla4.png);
     color: $color5;
     text-shadow: 0 0 10px $color6;
     background-size: cover;
@@ -74,17 +76,17 @@ body{
 }
 
 
-.button:hover{
+.button:hover {
     background-color: $color1;
 }
 
-.destacados{
-    display: inline-block;
+.destacados {
+    display: flex;
     justify-content: space-evenly;
     padding: 15px;
 }
 
-.card{
+.card {
     height: 380px;
     width: 30%;
     border: 3px solid $color7;
@@ -108,21 +110,23 @@ body{
     }
 }
 
-.card-title{
+.card-title {
     font-size: $size1;
     text-align: center;
     color: $color7;
     margin-bottom: 0;
 }
-.card-cantidad{
+
+.card-cantidad {
     font-size: $size1 - 5;
 }
-.card-desc{
+
+.card-desc {
     padding: 15px 15px;
     font-size: $size1/2;
 }
 
-h1{
+h1 {
     margin-top: $margin1*2;
     margin-left: $margin1;
     font-size: $size1 + 15;
@@ -134,7 +138,7 @@ h1{
 }
 
 
-h2{
+h2 {
     color: $color4;
     text-shadow: 0 0 5px $color6;
     text-transform: uppercase;
@@ -152,27 +156,29 @@ h2{
 }
 
 @keyframes aparecer {
-    0%{
-        opacity: 0; }
+    0% {
+        opacity: 0;
+    }
 
-    100%{
-        opacity: 1;}
+    100% {
+        opacity: 1;
+    }
 }
 
-.nosotros{
+.nosotros {
     padding-inline: 20px;
     text-align: center;
     margin-bottom: $margin1/2;
 }
 
-h3{
+h3 {
     color: $color1;
     font-family: $font1;
     text-align: left;
     text-transform: uppercase;
 }
 
-h4{
+h4 {
     color: $color2;
     font-family: $font3;
     text-align: center;
@@ -180,12 +186,12 @@ h4{
     padding-top: 30px;
 }
 
-.feature{
+.feature {
     height: auto;
     margin-bottom: $margin1 + 5;
 }
 
-.texto1{
+.texto1 {
     margin-left: $margin1;
     width: 60%;
     font-size: $size1 - 5;
@@ -193,51 +199,57 @@ h4{
 }
 
 
-article{
+article {
     border: 3px solid $color7;
     text-align: center;
     font-size: $size1 - 7;
 }
-article i{
+
+article i {
     font-size: $size1 + 10;
     color: $color7;
     padding: 20px;
 }
-.row1{
+
+.row1 {
     padding-top: 30px;
     padding-inline: 40px;
     display: flex;
 }
 
-h5{
+h5 {
     padding-top: 20px;
     color: $color1;
 }
-.valores{
+
+.valores {
     margin-inline: $margin1 + 5;
 }
 
-.nleft{
+.nleft {
     background-image: url(../assets/IMG_8218\ 2.jpg);
     background-size: cover;
     background-position: center;
     height: 350px;
 }
-.nright{
+
+.nright {
     text-align: left;
     color: grey;
 }
 
-.quien{
+.quien {
     color: $color2;
     font-family: $font2;
     text-align: left;
     margin-left: $margin1;
 }
-.quien2{
+
+.quien2 {
     margin-left: $margin1;
 }
-.btn{
+
+.btn {
     color: $color7;
     justify-content: end;
     margin-top: $margin1/2;
@@ -247,7 +259,7 @@ h5{
 
 
 /* footer */
-footer{
+footer {
     background-color: $color1;
     padding: 20px;
     margin-top: auto;
@@ -255,13 +267,15 @@ footer{
     color: $color4;
     font-size: $size1 - 5;
 }
-footer a{
+
+footer a {
     color: $color4;
     font-size: $size1 + 10;
     letter-spacing: 10px;
     text-decoration: none;
 }
-.what{
+
+.what {
     height: 40px;
     width: 40px;
     background-color: springgreen;

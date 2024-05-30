@@ -6,7 +6,9 @@
     <meta name="keywords" content="quesos, tabla, picoteo, crackers, dips, piqueo">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bs 5.1 inicia -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -17,25 +19,23 @@
 
 <body>
     <!-- navbar inicia -->
-    <nav class="navbar navbar-expand-sm navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Contablas Gourmet</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <a class="navbar-brand" href="#page_top">Contablas Gourmet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="d-flex justify-content-end collapse navbar-collapse" id="collapsibleNavbar">
-                
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Nosotras.html">Nosotras</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="Productos.html">Productos</a>
-
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Galeria.html">Galería</a>
                     </li>
@@ -48,7 +48,18 @@
     </nav>
     <!-- navbar termina -->
 
-
+    <!-- jumbotron inicia -->
+    <div class="p-5 jumbotron">
+        <h1>Tablas de Picoteo</h1>
+        <p class="texto1">En Contablas, creamos más que simples tablas de picoteo; diseñamos momentos que despiertan tus
+            sentidos. Cada combinación de sabores y colores es una historia por descubrir, una experiencia que
+            trasciende el simple acto de comer. Únete a nosotros en un viaje culinario donde la pasión por la
+            gastronomía se fusiona con el arte de compartir, y cada encuentro alrededor de nuestras tablas se convierte
+            en un capítulo inolvidable de tu historia. Prepárate para deleitar tu paladar y nutrir tu espíritu con
+            Contablas. Bienvenido a un mundo de sabores, emociones y momentos extraordinarios.</p>
+        <a href="Productos.html" class="btn bg-secondary text-white">Ver más</a>
+    </div>
+    <!-- jumbotron fin -->
 
     <h2>Productos Destacados</h2>
     <section class="destacados">
@@ -56,7 +67,8 @@
             <div class="card-img1"></div>
             <h3 class="card-title">Tabla Premium</h3>
             <h4 class="card-cantidad">Para 6 personas</h4>
-            <p class="card-desc">Crackers gourmet, jamón artesanal, 2 hummus, mix 3 quesos, aceitunas rellenas y negras, dip alcachofa, salame, mix vegetales.</p>
+            <p class="card-desc">Crackers gourmet, jamón artesanal, 2 hummus, mix 3 quesos, aceitunas rellenas y negras,
+                dip alcachofa, salame, mix vegetales.</p>
             <div class="card-redes"></div>
         </article>
         <!-- mi card inicia -->
@@ -64,18 +76,20 @@
             <div class="card-img2"></div>
             <h3 class="card-title">Tabla Estándar</h3>
             <h4 class="card-cantidad">Para 2 personas</h4>
-            <p class="card-desc">Galletas crackers, mix quesos, aceitunas, hummus de betarraga, papás fritas rústicas, salame, jamón serrano, frutos secos, aceitunas.</p>
+            <p class="card-desc">Galletas crackers, mix quesos, aceitunas, hummus de betarraga, papás fritas rústicas,
+                salame, jamón serrano, frutos secos, aceitunas.</p>
             <div class="card-redes"></div>
         </article>
         <!-- mi card fin -->
-            <!-- mi card inicia -->
-            <article class="card">
-                <div class="card-img3"></div>
-                <h3 class="card-title">Tabla Gourmet</h3>
-                <h4 class="card-cantidad">Para 4 personas</h4>
-                <p class="card-desc">Mix de quesos, tomate cherry, aceitunas, tomates cherry, frutos secos, crackers gourmet, salame, dip alcachofa, bastones zanahoria y pepino.</p>
-            </article>
-            <!-- mi card fin -->
+        <!-- mi card inicia -->
+        <article class="card">
+            <div class="card-img3"></div>
+            <h3 class="card-title">Tabla Gourmet</h3>
+            <h4 class="card-cantidad">Para 4 personas</h4>
+            <p class="card-desc">Mix de quesos, tomate cherry, aceitunas, tomates cherry, frutos secos, crackers
+                gourmet, salame, dip alcachofa, bastones zanahoria y pepino.</p>
+        </article>
+        <!-- mi card fin -->
     </section>
     <!-- feature inicia -->
     <h2>Nuestros Valores</h2>
@@ -114,7 +128,12 @@
             <div class="nleft col-sm-6"></div>
             <div class="nright col-sm-6">
                 <h3 class="quien">Quiénes Somos</h3>
-                <p class="quien2">En Contablas, compartimos nuestra pasión por la gastronomía y la creación de experiencias memorables alrededor de la mesa. Nos dedicamos a ofrecer tablas de picoteo que deleitan los sentidos con ingredientes frescos y una presentación cautivadora. Nuestro compromiso es crear momentos especiales y recuerdos duraderos para nuestros clientes. Cada tabla que creamos refleja nuestra dedicación. Únete a nosotros en esta emocionante aventura gastronómica y descubre el placer de compartir momentos inolvidables con Contablas.</p>
+                <p class="quien2">En Contablas, compartimos nuestra pasión por la gastronomía y la creación de
+                    experiencias memorables alrededor de la mesa. Nos dedicamos a ofrecer tablas de picoteo que deleitan
+                    los sentidos con ingredientes frescos y una presentación cautivadora. Nuestro compromiso es crear
+                    momentos especiales y recuerdos duraderos para nuestros clientes. Cada tabla que creamos refleja
+                    nuestra dedicación. Únete a nosotros en esta emocionante aventura gastronómica y descubre el placer
+                    de compartir momentos inolvidables con Contablas.</p>
                 <a href="Nosotras.html" class="btn btn-outline-secondary btn2">Ver más</a>
             </div>
         </div>
@@ -136,11 +155,11 @@
             </a>
         </div>
     </footer>
-<!-- footer fin -->
+    <!-- footer fin -->
 
-<a href="https://walink.co/0df3c2" class="what">
-    <i class="fa-brands fa-whatsapp"></i>
-</a>
+    <a href="https://walink.co/0df3c2" class="what">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

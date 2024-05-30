@@ -127,16 +127,20 @@ body {
 }
 
 h1 {
-    margin-top: $margin1*2;
-    margin-left: $margin1;
+    font-family: $font3;
+    font-weight: 600;
     font-size: $size1 + 15;
     text-transform: uppercase;
-    text-shadow: 2px 2px 2px $color6;
     animation-duration: 2s;
     animation-name: aparecer;
     animation-direction: alternate;
 }
 
+.tablas{
+    margin-top: $margin1*2;
+    margin-left: $margin1;
+    text-shadow: 4px 2px 2px $color6;
+}
 
 h2 {
     color: $color4;
@@ -195,7 +199,7 @@ h4 {
     margin-left: $margin1;
     width: 60%;
     font-size: $size1 - 5;
-    text-shadow: 5px 5 px 5 px $color6;
+    text-shadow: 3px 5px 5px $color6;
 }
 
 
@@ -292,7 +296,7 @@ footer a {
 }
 
 
-@import "Contacto";
-@import "Galeria";
-@import "Nosotras";
-@import "Productos";
+@import "contacto";
+@import "galeria";
+@import "nosotras";
+@import "productos";

@@ -1,4 +1,6 @@
-
+.productos{
+    color: $color2; 
+}
 .row{
     @extend .Destacados;
     margin-top: $margin1;

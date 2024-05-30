@@ -66,9 +66,9 @@ body {
 }
 
 .jumbotron {
-    background-image: linear-gradient(to right, rgb(200, 200, 200, 0.5), rgba(255, 255, 255, 0)), url(../assets/tabla4.png);
+    background-image: linear-gradient(to right, rgba(160, 160, 160, 0.5), rgba(255, 255, 255, 0)), url(../assets/tabla4.png);
     color: $color5;
-    text-shadow: 0 0 10px $color6;
+    text-shadow: 1 0 10px $color6;
     background-size: cover;
     height: 600px;
     padding-bottom: 50px;
@@ -80,7 +80,7 @@ body {
     background-color: $color1;
 }
 
-.destacados {
+.Destacados {
     display: flex;
     justify-content: space-evenly;
     padding: 15px;

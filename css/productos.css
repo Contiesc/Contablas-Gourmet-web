@@ -1,3 +1,7 @@
+.nav-link {
+  color: white;
+}
+
 .row {
   display: flex;
   justify-content: space-evenly;
@@ -12,6 +16,7 @@
   display: flex;
   height: -moz-fit-content;
   height: fit-content;
+  margin-left: 10px;
   width: 300px;
   padding: 10px;
   grid-template-columns: repeat(2);

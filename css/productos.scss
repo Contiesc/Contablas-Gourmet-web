@@ -1,7 +1,12 @@
+.nav-link{
+    color: white;
+}
+
 .row{
     display: flex;
     justify-content: space-evenly;
     padding: 15px;
+    
 }
 
 .col {
@@ -11,6 +16,7 @@
 .card {
     display: flex;
     height: fit-content;
+    margin-left: 10px;
     width: 300px;
     padding: 10px;
     grid-template-columns: repeat(2)
@@ -20,6 +26,7 @@
     align-content: center;
     height: 220px;
 }
+
 
 .productos{
     color: grey;

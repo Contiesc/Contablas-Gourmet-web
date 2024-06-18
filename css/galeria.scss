@@ -114,5 +114,6 @@ $micolor8: rgb(59, 59, 59);
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 5px;
+        flex-wrap: wrap;
     }
 }

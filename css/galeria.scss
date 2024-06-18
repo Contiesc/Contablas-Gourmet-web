@@ -5,10 +5,10 @@
 }
 
 .galeria{
-    width: 100%;
+    width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(8, 200px);
+    grid-template-rows: repeat(3, 200px);
     padding-inline: 20px;
     padding-bottom: 20px;
     grid-gap: 10px;
@@ -48,6 +48,12 @@ $micolor8: rgb(59, 59, 59);
     .item#{$i} {
         background-color: lighten($micolor8, $i * 8%);
         background-image: url(../assets/img#{$i}.jpeg);
+    }
+}
+
+@media(max-width:991px){
+    .galeria{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -99,12 +105,12 @@ $micolor8: rgb(59, 59, 59);
 
 @media only screen and (min-width:1024px){
     .galeria{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 200px);
     }
 }
 @media screen and (min-width: 401px) {
-    .columnas {
+    .galeria {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 5px;
